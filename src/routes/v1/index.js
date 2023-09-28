@@ -1,9 +1,9 @@
 const express = require('express');
 
-
+const userRoutes = require('./user-routes');
 
 const router = express.Router();
 
-
+router.use('/signUp', userRoutes);
 
 module.exports = router;
